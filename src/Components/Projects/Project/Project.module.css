@@ -1,0 +1,18 @@
+.project {
+    background-color: burlywood;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.imgContainer {
+    width: 200px;
+    height: 200px;
+    background-color: darksalmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

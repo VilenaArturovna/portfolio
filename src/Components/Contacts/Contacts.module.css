@@ -1,0 +1,21 @@
+.contactsBlock {
+    background-color: grey;
+    min-height: 50vh;
+}
+
+.contactsContainer{
+    flex-direction: column;
+}
+
+.formContainer {
+    width: 250px;
+    padding-bottom: 30px;
+}
+.formContainer input, textarea {
+    width: 100%;
+    margin: 3px 0;
+}
+.formContainer textarea {
+    width: 100%;
+    height: 100px;
+}
