@@ -1,17 +1,16 @@
 .skillsBlock {
-    background-color: darkcyan;
+    background-color: #353353;
     min-height: 50vh;
 
 }
+
 .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
     /*flex-wrap: nowrap;*/
 }
 
-.title {
 
-}
 .skills {
     border: 1px solid;
     width: 100%;

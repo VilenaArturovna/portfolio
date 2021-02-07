@@ -2,6 +2,7 @@ import React from "react";
 import styleContainer from '../../Common/Styles/Container.module.css'
 import Skill, {SkillType} from "./Skill/Skill";
 import style from './MySkills.module.css'
+import {Title} from "../../Common/Components/Title/Title";
 
 const skills: Array<SkillType> = [
     {title: 'HTML', description: 'Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.'},
@@ -14,7 +15,8 @@ function MySkills() {
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <h2 className={style.title}>My Skills</h2>
+                <Title title={"Skills"}/>
+
                 <div className={style.skills}>
                     {skills.map(s => <Skill title={s.title} description={s.description} />)}
                 </div>

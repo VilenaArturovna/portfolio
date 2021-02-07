@@ -2,7 +2,7 @@ import React, {CSSProperties} from "react";
 import style from './Project.module.css'
 
 export type ProjectType = {
-    img: string
+    img: {backgroundImage: string}
     title: string
     description: string
 }
@@ -13,11 +13,11 @@ export function Project(props: ProjectType) {
     }
     return (
         <div className={style.project}>
-            <div style={styles || ''} className={style.imgContainer}>
-                <button>See</button>
+            <div style={props.img} className={style.imgContainer}>
+                <a>See</a>
             </div>
-            <h3>{props.title}</h3>
-            <div>{props.description}</div>
+            <div className={style.projectInfo}><h3 className={style.title}>{props.title}</h3>
+                <p className={style.description}>{props.description}</p></div>
         </div>
     )
 }

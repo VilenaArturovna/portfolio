@@ -1,0 +1,22 @@
+.title {
+    margin-top: 100px;
+    margin-bottom: 55px;
+}
+
+.title h2 {
+    font-size: 36px;
+    margin: 0 0 0 14px;
+    position: relative;
+}
+
+/*.title h2::before {
+    content: "";
+    background-image: url(img/blur.png);
+    display: block;
+    height: 37px;
+    left: -14px;
+    top: -14px;
+    position: absolute;
+    width: 37px;
+
+}*/
