@@ -1,0 +1,40 @@
+@import "../../Common/Styles/sass/Variables";
+@import "../../Common/Styles/sass/Mixins";
+
+.mainBlock {
+  min-height: 50vh;
+  background-color: $bgMainColor;
+
+  .mainContainer {
+    flex-direction: column;
+
+    .info {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+
+      .greeting {
+        width: 300px;
+        background-color: $textColor;
+        p {
+
+          @include text(16px, 400, 1.7);
+          color: $textSecondColor;
+        }
+      }
+
+      .photo {
+        background-color: $bgSecondColor;
+        width: 300px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+
+

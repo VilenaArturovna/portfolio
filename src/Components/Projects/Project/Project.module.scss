@@ -1,0 +1,64 @@
+@import "../../../Common/Styles/sass/Variables";
+@import "../../../Common/Styles/sass/Mixins";
+
+
+.project {
+  background-color: $bgSecondColor;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+  .imgContainer {
+    height: 300px;
+    background-size: cover; /*вмещает изображение полностью*/
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {   /*затемнение всей картинки*/
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+    a {
+      @include text(16px, 700, 1);
+      background: $primaryColor;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      border-radius: 60px;
+      overflow: hidden;
+      padding: 12px 32px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      outline: 0;
+      z-index: 1;
+    }
+  }
+
+  .projectInfo {
+    padding: 20px;
+
+    .title {
+      @include text(20px, 700, 1.2);
+      margin: 0 0 16px;
+    }
+
+    .description {
+      @include text(16px, 400, 1.7);
+      margin: 0;
+    }
+  }
+
+}
+
+

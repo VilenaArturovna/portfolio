@@ -1,13 +1,18 @@
-.title {
-    margin-top: 100px;
-    margin-bottom: 55px;
-}
+@import "../../../Common/Styles/sass/Mixins";
 
-.title h2 {
-    font-size: 36px;
+.title {
+  margin-top: 100px;
+  margin-bottom: 55px;
+
+  h2 {
+    @include text(36px, 700, 1.2);
     margin: 0 0 0 14px;
     position: relative;
+  }
+
 }
+
+
 
 /*.title h2::before {
     content: "";

@@ -1,20 +1,23 @@
 import React from "react";
-import style from './Main.module.css'
+import style from './Main.module.scss'
 import styleContainer from '../../Common/Styles/Container.module.css'
+import {Title} from "../../Common/Components/Title/Title";
 
 function Main() {
     return (
         <div className={style.mainBlock}>
-            <div className={styleContainer.container}>
-                <div className={style.greeting}>
-                    <span>Hi There</span>
-                    <h1>I am Vilena</h1>
-                    <p>Front-end Developer</p>
+            <div className={`${styleContainer.container} ${style.mainContainer}`} >
+                <Title title={'About me'} />
+                <div className={style.info}>
+                    <div className={style.greeting}>
+                        <p>Hi, I'm Vilena. Web developer from Omsk, Russian Federation.</p>
+                    </div>
+                    <div className={style.photo}></div>
                 </div>
-                <div className={style.photo}></div>
             </div>
         </div>
     )
+
 }
 
 export default Main
