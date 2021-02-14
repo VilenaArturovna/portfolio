@@ -1,0 +1,15 @@
+@import "../../Common/Styles/sass/Variables";
+
+.footer {
+    background-color: $bgSecondColor;
+    min-height: 200px;
+    .footerContainer {
+        flex-direction: column;
+        .social {
+            width: 250px;
+            height: 50px;
+            border: 1px solid;
+        }
+    }
+
+}
