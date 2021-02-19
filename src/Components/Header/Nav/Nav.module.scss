@@ -1,12 +1,14 @@
 @import "../../../Common/Styles/sass/Variables";
+@import "../../../Common/Styles/sass/Mixins";
 
 .nav {
-    border: 1px solid;
-    width: 300px;
+
     display: flex;
     justify-content: space-between;
     a {
-        color: $textColor;
+        @include text(14px, 400, 1);
+        @include button();
         text-decoration: none;
+        margin: 0 3px;
     }
 }

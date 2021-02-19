@@ -1,13 +1,13 @@
 @import "../../../Common/Styles/sass/Variables";
 @import "../../../Common/Styles/sass/Mixins";
 
-
 .project {
   background-color: $bgSecondColor;
   width: 500px;
   display: flex;
   flex-direction: column;
   margin: 10px;
+  border-radius: 20px;
 
   .imgContainer {
     height: 300px;
@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 20px 20px 0 0;
 
     &::before {   /*затемнение всей картинки*/
       position: absolute;
@@ -27,21 +28,12 @@
       left: 0;
       right: 0;
       opacity: 0.4;
+      border-radius: 20px 20px 0 0;
     }
 
     a {
       @include text(16px, 700, 1);
-      background: $primaryColor;
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      border-radius: 60px;
-      overflow: hidden;
-      padding: 12px 32px;
-      cursor: pointer;
-      border: 1px solid transparent;
-      outline: 0;
-      z-index: 1;
+      @include button();
     }
   }
 

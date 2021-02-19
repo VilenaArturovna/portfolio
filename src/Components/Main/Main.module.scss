@@ -20,6 +20,7 @@
       .greeting {
         width: 300px;
         background-color: $textColor;
+        border-radius: 20px;
         p {
 
           @include text(16px, 400, 1.7);

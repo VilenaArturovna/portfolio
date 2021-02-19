@@ -3,12 +3,11 @@ import style from './Nav.module.scss'
 
 function Nav() {
     return (
-        <div className={style.nav}>
-            <a href="">Главная</a>
-            <a href="">Скиллы</a>
-            <a href="">Проекты</a>
-            <a href="">Контакты</a>
-        </div>
+        <nav className={style.nav}>
+            <a href="#skills">Скиллы</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
     )
 }
 
