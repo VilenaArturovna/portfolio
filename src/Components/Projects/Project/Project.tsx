@@ -1,11 +1,6 @@
 import React from "react";
 import style from './Project.module.scss'
-
-export type ProjectType = {
-    img: {backgroundImage: string}
-    title: string
-    description: string
-}
+import {ProjectType} from "../../../state/state";
 
 export function Project(props: ProjectType) {
     return (

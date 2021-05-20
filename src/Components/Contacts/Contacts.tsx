@@ -7,14 +7,13 @@ export function Contacts() {
     return (
         <section className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <Title title={'Contacts'} id={'contacts'}/>
+                <Title title={'Контакты'} id={'contacts'}/>
                 <form className={style.formContainer}>
                     <input type="text"/>
                     <input type="text"/>
-                    <textarea></textarea>
+                    <textarea />
                     <button type={'submit'}>Send</button>
                 </form>
-
             </div>
         </section>
     )

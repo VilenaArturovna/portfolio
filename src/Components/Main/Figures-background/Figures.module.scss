@@ -1,0 +1,124 @@
+.parallax {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0px, 0px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+
+  .layer {
+    margin: 5px;
+  }
+
+  .p1 {
+    left: 10%;
+    top: 10%;
+    transform: translate3d(-10.6633px, 2.89333px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: relative;
+    display: block;
+  }
+
+  .p2 {
+    left: 25%;
+    top: 30%;
+    transform: translate3d(-7.10883px, 1.92889px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p3 {
+    left: 15%;
+    bottom: 30%;
+    transform: translate3d(-10.6633px, 2.89333px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p4 {
+    left: 10%;
+    bottom: 10%;
+    transform: translate3d(-21.3265px, 5.78667px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p5 {
+    left: 45%;
+    top: 10%;
+    transform: translate3d(-7.10883px, 1.92889px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p6 {
+    left: 40%;
+    bottom: 10%;
+    transform: translate3d(-17.7721px, 4.82222px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p7 {
+    top: 20%;
+    right: 30%;
+    transform: translate3d(-14.2177px, 3.85778px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p8 {
+    right: 30%;
+    bottom: 20%;
+    transform: translate3d(-10.6633px, 2.89333px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p9 {
+    right: 10%;
+    top: 10%;
+    transform: translate3d(-10.6633px, 2.89333px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p10 {
+    top: 45%;
+    right: 20%;
+    transform: translate3d(-7.10883px, 1.92889px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+
+  .p11 {
+    bottom: 10%;
+    right: 10%;
+    transform: translate3d(-17.7721px, 4.82222px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+    display: block;
+  }
+}

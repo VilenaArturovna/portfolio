@@ -14,7 +14,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
 
 
       .greeting {
@@ -22,9 +22,9 @@
         background-color: $textColor;
         border-radius: 20px;
         p {
-
           @include text(16px, 400, 1.7);
           color: $textSecondColor;
+          padding: 10px;
         }
       }
 
