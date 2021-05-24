@@ -1,4 +1,5 @@
 @import "../../Common/Styles/sass/Variables";
+@import "../../Common/Styles/sass/Mixins";
 
 .contactsBlock {
     background-color: $bgMainColor;
@@ -6,14 +7,32 @@
     .contactsContainer{
         flex-direction: column;
         .formContainer {
-            width: 250px;
+            width: 50%;
             padding-bottom: 30px;
+            div {
+                display: flex;
+                width: 100%;
+            }
+            .paddingForm {
+                padding: 0 15px;
+            }
             input, textarea {
                 width: 100%;
-                margin: 3px 0;
+                padding: 10px 30px;
+                margin-bottom: 30px;
+                border-radius: 30px;
+                border: 0;
+                height: 60px;
+                @include text(16px, 400, 1.6);
+                color: $bgSecondColor;
             }
             textarea {
-                height: 100px;
+                height: 125px;
+            }
+            button {
+                @include button();
+                @include text(14px, 400, 1);
+                margin-left: 15px;
             }
         }
     }

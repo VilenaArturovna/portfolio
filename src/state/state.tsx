@@ -6,6 +6,7 @@ import style from "../Components/Skills/Skill/Skill.module.scss";
 import redux from "../Assets/Images/iconSkills/redux.png";
 import typescript from "../Assets/Images/iconSkills/file_type_typescript_icon_130108.png";
 import React from "react";
+import {faTv} from "@fortawesome/free-solid-svg-icons/faTv";
 
 export type ProjectType = {
     img: {backgroundImage: string}
@@ -17,15 +18,15 @@ export const projects: Array<ProjectType> = [
         img: {
             backgroundImage: `url(${socialImage})`,
         },
-        title: 'Social',
-        description: 'Note that the development build is not optimized.To create a production build, use yarn build.'
+        title: 'Social network',
+        description: 'Небольшая социальная сеть'
     },
     {
         img: {
             backgroundImage: `url(${todoImage})`,
         },
-        title: 'Todolist',
-        description: 'Note that the development build is not optimized.'
+        title: 'TodoList',
+        description: 'Всем полюбившийся "to do list"'
     },
 ]
 
@@ -34,12 +35,13 @@ export type SkillType = {
     description: string
 }
 export const skills: Array<SkillType> = [
+    {title: 'React', description: 'Функциональные компоненты, Hooks, react-router, material-ui, swiper и др.'},
+    {title: 'Redux', description: 'react-redux, redux-thunk, axios, redux-toolkit, formik, redux-form'},
+    {title: 'TypeScript', description: 'Типизация, дженерики'},
+    {title: 'JavaScript', description: 'Основы JavaScript'},
     {title: 'HTML5', description: 'Вёрстка, семантика'},
     {title: 'CSS3', description: 'Медиазапросы, препроцессор SASS, миксины'},
-    {title: 'React', description: 'Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.'},
-    {title: 'TypeScript', description: 'Типизация, дженерики'},
-    {title: 'Redux', description: 'Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.'},
-    {title: 'JavaScript', description: 'Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.'},
+    {title: 'Дополнительно', description: 'Storybook, тестирование'}
 ]
 
 export const iconsForSkills = [
@@ -49,4 +51,5 @@ export const iconsForSkills = [
     {title: 'JavaScript', icon: <FontAwesomeIcon icon={faJs} className={style.icon} style={{color: '#f07f21'}}/>},
     {title: 'Redux', icon: <img src={redux} className={style.icon} alt={'redux'} />},
     {title: 'TypeScript', icon: <img src={typescript} className={style.icon} alt={'typescript'}/>},
+    {title: 'Дополнительно', icon: <FontAwesomeIcon icon={faTv} className={style.icon} style={{color: 'mediumvioletred'}}/>}
 ]

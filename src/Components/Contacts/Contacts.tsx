@@ -9,10 +9,13 @@ export function Contacts() {
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title title={'Контакты'} id={'contacts'}/>
                 <form className={style.formContainer}>
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea />
-                    <button type={'submit'}>Send</button>
+                    <div>
+                        <div className={style.paddingForm}><input type="text" placeholder={'Ваше имя'}/></div>
+                        <div className={style.paddingForm}><input type="email" placeholder={'Ваш e-mail'}/></div>
+                    </div>
+                    <div className={style.paddingForm}><input type="text" placeholder={'Тема сообщения'}/></div>
+                    <div className={style.paddingForm}><textarea placeholder={'Сообщение'}/></div>
+                    <button type={'submit'}>Отправить</button>
                 </form>
             </div>
         </section>
