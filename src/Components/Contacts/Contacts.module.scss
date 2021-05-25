@@ -25,6 +25,9 @@
                 height: 60px;
                 @include text(16px, 400, 1.6);
                 color: $bgSecondColor;
+
+                    outline: none !important;
+
             }
             textarea {
                 height: 125px;
