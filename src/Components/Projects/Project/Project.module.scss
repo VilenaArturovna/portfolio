@@ -6,8 +6,12 @@
   width: 500px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px 10px 30px;
   border-radius: 20px;
+  transition: all 1.2s ease-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 
   .imgContainer {
     height: 300px;
@@ -16,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: relative;
     border-radius: 20px 20px 0 0;
 
@@ -34,6 +39,8 @@
     a {
       @include text(16px, 700, 1);
       @include button();
+      margin-top: 10px;
+      text-decoration: none;
     }
   }
 
@@ -47,7 +54,13 @@
 
     .description {
       @include text(16px, 400, 1.7);
-      margin: 0;
+      margin: 0 0 5px;
+    }
+
+    div {
+      color: $textColor;
+      padding-left: 10px;
+      padding-bottom: 8px;
     }
   }
 

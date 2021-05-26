@@ -10,12 +10,14 @@ export function Main() {
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <Figures/>
                 <Title title={'Обо мне'} id={'about'}/>
-                    <div className={style.info}>
-                        <div className={style.greeting}>
-                            <p>Hi, I'm Vilena. Web developer from Omsk, Russian Federation.</p>
-                        </div>
-                        <div className={style.photo}></div>
+                <div className={style.info}>
+                    <div className={style.greeting}>
+                        <p>Привет!!<br/> Меня зовут Вилена<br/>Я - frontend-разработчик из Омска <br/>Возраст: 34
+                            года<br/>Образование: ОмГТУ, промышленная теплоэнергетика <br/>
+                        </p>
                     </div>
+                    <div className={style.photo}></div>
+                </div>
             </div>
         </section>
     )

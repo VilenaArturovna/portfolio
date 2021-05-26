@@ -23,7 +23,7 @@ export function Contacts() {
     return (
         <section className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-                <Title title={'Контакты'} id={'contacts'}/>
+                <Title title={'Связаться'} id={'contacts'}/>
                 <Formik
                     initialValues ={{email: '', name: '', theme: '', message: ''}}
                     validate={values => {
@@ -38,7 +38,7 @@ export function Contacts() {
                         return errors;
                     }}
                     onSubmit={(values, {setSubmitting}) => {
-                        axios.post('https://vilena-feedback.herokuapp.com/sendMessage', {values})
+                        axios.post('http://localhost:3010/sendMessage', {values})
                             .then(() => alert('Your message has been send'))
                     }}
                 >
@@ -54,7 +54,7 @@ export function Contacts() {
                       }) => (
                         <form onSubmit={handleSubmit} className={style.formContainer}>
 
-                            <div>
+                            <div className={style.columnInputs}>
                                 <div className={style.paddingForm}><input type="text" name="name"
                                                                           onChange={handleChange}
                                                                           onBlur={handleBlur}

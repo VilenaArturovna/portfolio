@@ -11,7 +11,9 @@ export function Projects() {
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title title={'Проекты'} id={'projects'}/>
                 <div className={style.projects}>
-                    {projects.map((p, index) => <Project key={index} img={p.img} title={p.title} description={p.description}/>)}
+                    {projects.map((p, index) => <Project key={index} img={p.img} title={p.title}
+                                                         description={p.description} github={p.github} pages={p.pages}
+                                                         technologies={p.technologies} abilities={p.abilities}/>)}
                 </div>
             </div>
         </section>

@@ -2,43 +2,66 @@
 @import "../../Common/Styles/sass/Mixins";
 
 .contactsBlock {
-    background-color: $bgMainColor;
-    min-height: 50vh;
-    .contactsContainer{
-        flex-direction: column;
-        .formContainer {
-            width: 50%;
-            padding-bottom: 30px;
-            div {
-                display: flex;
-                width: 100%;
-            }
-            .paddingForm {
-                padding: 0 15px;
-            }
-            input, textarea {
-                width: 100%;
-                padding: 10px 30px;
-                margin-bottom: 30px;
-                border-radius: 30px;
-                border: 0;
-                height: 60px;
-                @include text(16px, 400, 1.6);
-                color: $bgSecondColor;
+  background-color: $bgMainColor;
+  min-height: auto;
 
-                    outline: none !important;
+  .contactsContainer {
+    flex-direction: column;
 
-            }
-            textarea {
-                height: 125px;
-            }
-            button {
-                @include button();
-                @include text(14px, 400, 1);
-                margin-left: 15px;
-            }
+    .formContainer {
+      width: 50%;
+      padding-bottom: 30px;
+        @media (max-width: 768px) {
+            width: 75%;
         }
+        @media (orientation: portrait) and (max-width: 576px) {
+            width: 75%;
+        }
+
+      div {
+        display: flex;
+        width: 100%;
+      }
+
+      .columnInputs {
+        flex-direction: row;
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+        @media (orientation: portrait) and (max-width: 576px) {
+            flex-direction: column;
+        }
+      }
+
+      .paddingForm {
+        padding: 0 15px;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 10px 30px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+        border: 0;
+        height: 60px;
+        @include text(16px, 400, 1.6);
+        color: $bgSecondColor;
+
+        outline: none !important;
+
+      }
+
+      textarea {
+        height: 125px;
+      }
+
+      button {
+        @include button();
+        @include text(14px, 400, 1);
+        margin-left: 15px;
+      }
     }
+  }
 
 }
 
