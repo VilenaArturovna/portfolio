@@ -2,11 +2,11 @@
 @import "../../Common/Styles/sass/Mixins";
 
 .mainBlock {
-  min-height: 50vh;
   background-color: $bgMainColor;
 
   .mainContainer {
     flex-direction: column;
+    padding-bottom: 30px;
 
     .info {
       width: 100%;

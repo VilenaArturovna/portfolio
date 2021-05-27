@@ -38,7 +38,7 @@ export function Contacts() {
                         return errors;
                     }}
                     onSubmit={(values, {setSubmitting}) => {
-                        axios.post('http://localhost:3010/sendMessage', {values})
+                        axios.post('https://vilena-feedback.herokuapp.com/sendMessage', {values})
                             .then(() => alert('Your message has been send'))
                     }}
                 >

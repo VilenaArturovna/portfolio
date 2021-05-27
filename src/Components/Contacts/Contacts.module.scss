@@ -3,7 +3,6 @@
 
 .contactsBlock {
   background-color: $bgMainColor;
-  min-height: auto;
 
   .contactsContainer {
     flex-direction: column;
@@ -11,12 +10,9 @@
     .formContainer {
       width: 50%;
       padding-bottom: 30px;
-        @media (max-width: 768px) {
-            width: 75%;
-        }
-        @media (orientation: portrait) and (max-width: 576px) {
-            width: 75%;
-        }
+      @media (max-width: 768px), (orientation: portrait) {
+        width: 75%;
+      }
 
       div {
         display: flex;
@@ -25,11 +21,8 @@
 
       .columnInputs {
         flex-direction: row;
-        @media (max-width: 768px) {
+        @media (max-width: 768px), (orientation: portrait) {
           flex-direction: column;
-        }
-        @media (orientation: portrait) and (max-width: 576px) {
-            flex-direction: column;
         }
       }
 
