@@ -4,6 +4,7 @@
 .nav {
     display: flex;
     justify-content: space-between;
+
     a {
         @include text(14px, 400, 1);
         @include button();

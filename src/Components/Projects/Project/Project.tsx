@@ -18,8 +18,11 @@ export function Project(props: ProjectType) {
             <div className={style.projectInfo}>
                 <h3 className={style.title}>{props.title}</h3>
                 <p className={style.description}>{props.description}</p>
-                <p className={style.description} onClick={onCollapsed}>Возможности и технологии</p>
-                {!collapsed && <div>
+                <p className={style.description}
+                   style={collapsed ? {'textDecoration': 'underline'} : {'textDecoration': 'none'}}
+                   onClick={onCollapsed}>Возможности и технологии</p>
+                {!collapsed &&
+                <div>
                     <div>{props.abilities}</div>
                     <div>{props.technologies}</div>
                 </div>}

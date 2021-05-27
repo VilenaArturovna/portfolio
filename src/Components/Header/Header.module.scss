@@ -6,6 +6,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media (max-width: 402px){
+    display: none;
+  }
 
   .headerContainer {
     justify-content: flex-end;
