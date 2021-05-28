@@ -13,6 +13,11 @@
       @media (max-width: 768px), (orientation: portrait) {
         width: 75%;
       }
+      .error {
+        color: red;
+        justify-content: center;
+        padding-bottom: 30px;
+      }
 
       div {
         display: flex;
@@ -39,9 +44,7 @@
         height: 60px;
         @include text(16px, 400, 1.6);
         color: $bgSecondColor;
-
         outline: none !important;
-
       }
 
       textarea {
@@ -55,6 +58,5 @@
       }
     }
   }
-
 }
 

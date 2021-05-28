@@ -39,7 +39,7 @@ export const projects: Array<ProjectType> = [
         },
         title: 'TodoList',
         description: 'Всем полюбившийся "to do list"',
-        pages: '',
+        pages: 'https://vilenaarturovna.github.io/todolist/',
         github: 'https://github.com/VilenaArturovna/todolist',
         abilities: 'Авторизация в приложении, добавление, удаление листов и тасок, редактирование названия листов и ' +
             'тасок, изменение статуса выполнения тасок',

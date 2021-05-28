@@ -3,6 +3,7 @@ import style from './Main.module.scss'
 import styleContainer from '../../Common/Styles/Container.module.scss'
 import {Title} from "../../Common/Components/Title/Title";
 import {Figures} from "./Figures-background/Figures";
+import photoImg from '../../Assets/Images/Photo.jpg'
 
 export function Main() {
     return (
@@ -16,7 +17,8 @@ export function Main() {
                             года<br/>Образование: ОмГТУ, промышленная теплоэнергетика <br/>
                         </p>
                     </div>
-                    <div className={style.photo}></div>
+                    <div className={style.photo}
+                         style={{backgroundImage: `url(${photoImg})`, backgroundSize: 'cover'}}></div>
                 </div>
             </div>
         </section>
