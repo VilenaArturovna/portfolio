@@ -46,7 +46,7 @@ export function Contacts() {
                     }}
                     onSubmit={async (values, {setSubmitting}) => {
                         try {
-                            await axios.post('https://vilena-feedback.herokuapp.com', {values})
+                            await axios.post('https://vilena-feedback.herokuapp.com/sendMessage', {values})
                             togglePopup()
                         } catch (e) {
                             alert('Произошла непредвиденная ошибка: ' + e)
