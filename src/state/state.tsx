@@ -43,7 +43,7 @@ export const projects: Array<ProjectType> = [
         github: 'https://github.com/VilenaArturovna/todolist',
         abilities: 'Авторизация в приложении, добавление, удаление листов и тасок, редактирование названия листов и ' +
             'тасок, изменение статуса выполнения тасок',
-        technologies: 'React, redux, typescript, router, thunk, axios, toolkit, material-ui, formik, тесты'
+        technologies: 'React, redux, typescript, router, thunk, axios, toolkit, material-ui, formik, тесты, Storybook'
     },
     {
         img: {

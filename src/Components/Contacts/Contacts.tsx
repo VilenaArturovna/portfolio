@@ -89,7 +89,7 @@ export function Contacts() {
                                                                          onBlur={handleBlur}
                                                                          value={values.message}
                                                                          placeholder={'Сообщение'}/></div>
-                            {errors.message && <div className={style.error}>{errors.message}</div>}
+                            {errors.message && touched.message && <div className={style.error}>{errors.message}</div>}
                             <button type={'submit'} disabled={isSubmitting}>Отправить</button>
 
                         </form>
