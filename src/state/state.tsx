@@ -2,6 +2,7 @@ import socialImage from "../Assets/Images/social.jpg";
 import todoImage from "../Assets/Images/todolist.jpg";
 import portfolioImage from "../Assets/Images/portfolio.png";
 import itDocImage from "../Assets/Images/itDoc.png";
+import cocktailsImage from './../Assets/Images/Cocktails.jpg'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCss3Alt, faHtml5, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
 import style from "../Components/Skills/Skill/Skill.module.scss";
@@ -23,15 +24,14 @@ export type ProjectType = {
 export const projects: Array<ProjectType> = [
     {
         img: {
-            backgroundImage: `url(${socialImage})`,
+            backgroundImage: `url(${cocktailsImage})`,
         },
-        title: 'Social network',
-        description: 'Небольшая социальная сеть',
-        pages: 'https://vilenaarturovna.github.io/WayOfSamurai/',
-        github: 'https://github.com/VilenaArturovna/WayOfSamurai',
-        abilities: 'Авторизация в приложении, редактирование профиля, переход ' +
-            'по страницам пользователей, подписка и отписка от пользователей, добавление постов',
-        technologies: 'React, redux, typescript, router, thunk, axios'
+        title: 'CocktailsDB',
+        description: 'Портал с коктейлями и напитками - личный проект, основанный на бесплатном API',
+        pages: 'https://vilenaarturovna.github.io/cocktails/',
+        github: 'https://github.com/VilenaArturovna/cocktails',
+        abilities: 'Выгрузка напитков и ингредиентов из базы данных, переход по различным страницам, поиск по базе данных. Проект находится в стадии разработки',
+        technologies: 'React, redux, typescript, router, thunk, axios, sass'
     },
     {
         img: {
@@ -68,6 +68,18 @@ export const projects: Array<ProjectType> = [
         github: 'https://github.com/VilenaArturovna/portfolio',
         abilities: 'Ничего особенного. Просто лэндинг с минимумом анимации и формой обратной связи',
         technologies: 'React, typescript, axios, formik, nodejs-express'
+    },
+    {
+        img: {
+            backgroundImage: `url(${socialImage})`,
+        },
+        title: 'Social network',
+        description: 'Небольшая социальная сеть',
+        pages: 'https://vilenaarturovna.github.io/WayOfSamurai/',
+        github: 'https://github.com/VilenaArturovna/WayOfSamurai',
+        abilities: 'Авторизация в приложении, редактирование профиля, переход ' +
+            'по страницам пользователей, подписка и отписка от пользователей, добавление постов',
+        technologies: 'React, redux, typescript, router, thunk, axios'
     },
 ]
 
